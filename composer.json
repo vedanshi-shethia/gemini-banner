@@ -1,0 +1,29 @@
+{
+    "name": "vedanshi-shethia/gemini-banner",
+    "description": "Laravel package to generate website banners using Gemini AI",
+    "type": "library",
+    "license": "MIT",
+
+    "autoload": {
+        "psr-4": {
+        "Vedanshi\\GeminiBanner\\": "src/"
+        }
+    },
+
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Vedanshi\\GeminiBanner\\GeminiBannerServiceProvider"
+            ],
+            "aliases": {
+                "GeminiBanner": "Vedanshi\\GeminiBanner\\Facades\\GeminiBanner"
+            }
+        }
+    },
+
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^9.0|^10.0|^11.0|^12.0"
+    }
+
+}
