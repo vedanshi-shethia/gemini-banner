@@ -38,7 +38,7 @@ composer require vedanshi-shethia/gemini-banner
 Publish the config file:
 
 ```bash
-php artisan vendor:publish --tag=gemini-banner-config
+php artisan vendor:publish --tag=gemini-banner
 ```
 
 This creates:
@@ -48,6 +48,21 @@ config/gemini-banner.php
 ```
 
 ---
+
+## 🔗 Storage Symlink (Required)
+
+This package stores generated banners on the public disk.
+Make sure the public storage symlink exists:
+
+```bash
+php php artisan storage:link
+```
+
+This creates:
+
+```
+public/storage → storage/app/public
+```
 
 ### 🔑 Environment variables
 
